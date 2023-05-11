@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-left: 0;
+    font-family: 'Poppins', sans-serif;font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: black ;
+    width: 98.25%;  
+    /*position: fixed;
+    z-index: 12;*/
+}
+
+.logo{
+    flex-basis: 10%;
+}
+
+.logo img{
+    height: 80px;
+}
+
+.navlinks{
+    text-align: right;
+    flex-basis: 80%;
+}
+
+.navlinks ul{
+    position: relative;
+    margin-right: 50px;
+}
+
+.navlinks ul li{
+    position: relative;
+    list-style: none;
+    display:inline-block;
+    padding: 8px 20px;
+}
+
+.navlinks ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.navlinks ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navlinks ul li a:hover::after{
+    width: 100%;
+}
+
+/*------------------*/
+.profile{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.fa-solid{
+    color: #fff;
+    margin-right: 0px;
+}
+
+
+.text{
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text h1{
+    font-size: 70px;
+}
+
+.text p{
+    font-size: 20px;
+}
+
+/*-------------Section 3---Footer-------------*/
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px 0 150px;
+    height: 40vh;
+}
+
+
+.footerItem{
+    height: 250px;
+    width: 250px;
+}
+
+.QR{
+    height: 250px;
+    width: 250px;
+}
+
+.f_icon{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.f_logo{
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    padding: 0;
+}
+
+.footer_hr{
+    height: 3px;
+    background-color: #808080;
+}
+
+
+
+/*-------------------------------------------------*/
+/*---------------------------------------------------*/
+
+
+.Reg-section{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainlayout{
+    height: 80vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    box-shadow: 5px 5px 15px -5px #696969, -5px 10px 10px #112B3C;
+}
+
+.sublayout-1{
+    height: 75vh;
+    flex-basis: 40%;
+    background-image:url(../images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.regForm-left{
+    height: 100%;
+    
+}
+
+
+.regForm-left h1{
+    margin-top: 40px;
+    margin-bottom: 25px;
+    padding-top: 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.regForm-left p{
+    color: black;
+    padding-top: 0;
+    font-weight: 600;
+    font-family: monospace;
+    font-size: large;
+    margin-bottom: 420px;
+}
+
+.loginbtn{
+    text-align: center;
+    border-radius: 25px;
+    background-color: #112B3C;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px 34px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+ 
+}
+
+/*--------------------------------------------------balannaaaaaaaaaaaaaaaaaaaa---------------*/
+.loginbtn:hover{
+    background-color: #112B3C;
+    color: #fff;
+   
+}
+
+
+.sublayout-2{
+    border: 2px solid black;
+    border-radius: 5px;
+    border-width: 3px;
+    height: 100%;
+    flex-basis: 60%;
+    text-align: center;
+}
+
+.reg_icon{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;   
+}
+
+.container{
+    display: flex;
+    text-align: left;
+    padding-left: 150px;
+}
+
+.user-details{
+    width: 80%;
+}
+
+.user-details form{
+    display: flex;
+}
+
+.form-right{
+    padding-left: 100px;
+}
+
+.inputbox{
+    margin: 20px 0 20px 0;
+}
+
+.inputbox input{
+    height: 45px;
+    width: 130%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #112B3C;
+    font-size: 18px;
+}
+
+.details{
+    font-weight: 600;
+    text-align: left;
+    font-size: 20px;
+}
+
+.regbtn{
+    margin-left: 40px ;
+}
+
+.error{
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    color: red;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a39ba673b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../javascript/register.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    <!------------------------------------------------------>
+    <!----------------Header Section------------------------>
+    <section class="header">
+
+        <div class="navbar">
+
+                <div class="logo">
+                    <img src="../images/logo-text-3.png">
+                </div>
+    
+                <div class="navlinks">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">CATEGORY</a></li>
+                        <li><a href="#">STORE</a></li>
+                        <li><a href="#">PROMO</a></li>
+                        <li><a href="#">NUTRIENTS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                    </ul>
+                </div>
+
+                <div class="profile">
+                    <a href="#"><i class="fa-solid fa-circle-user fa-4x"></i></a>
+                </div>
+
+        </div>
+    
+    </section>
+
+
+    <!------------------------------------------------------>
+    <!----------------Register Section------------------------>
+
+    <section class="Reg-section">
+        <div class="mainlayout">
+            
+            <div class="sublayout-1">
+                <div class="regForm-left">
+                    <h1>Register</h1>
+                    <p>To keep connected with us please <br>register with your personal info.....</p>
+                    <a href="../../IT21206696-Jayasiri k.b.s.r/html/login_2.html" class="loginbtn">LOG IN</a>
+                    <p>If You already have an account</p>
+                </div>   
+            </div>
+
+
+
+            <div class="sublayout-2">
+
+                <h1>Create Account</h1>
+                <div class="reg_icon">
+                    <i class="fa-brands fa-facebook-f fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <i class="fa-brands fa-google-plus-g fa-2x"></i>
+                </div>
+                <p>-or with your email-</p>
+
+                <div class="container">
+                    <div class="user-details">
+                        <form method="post" action="../php/user_register.php">
+                        
+                                <div>
+                                <div class="inputbox">
+                                    <span class="details">First Name:</span><br>
+                                    <input id="firstName" name="firstName" onkeyup="myfunction1()" type="text" placeholder="Enter Your First name" required>
+                                    <h4 class="error" id="firstNameMsg"></h4>
+                                </div>
+
+                               <div class="inputbox">
+                                    <span class="details">User name:</span><br>
+                                    <input id="userName" name="userName" onkeyup="myfunction3()" type="text" placeholder="Enter User name" required>
+                                    <h4 class="error" id="usernameMsg"></h4>
+                                </div>
+
+                                <div class="inputbox">
+                                    <span class="details">E mail:</span><br>
+                                    <input id="email" name="email" onkeyup="myfunction4()" type="email" placeholder="Enter Your Email" required>
+                                    <h4 class="error" id="emailmsg"></h4>
+                                </div>
+
+                                <div>
+                                    <span class="details">Gender:</span><br>
+                                    <input class="radiobtn" type="radio" value="Male" name="gender">Male
+                                    <input class="radiobtn" type="radio" value="Female" name="gender">Female
+                                </div>
+
+                                <div class="inputbox">
+                                    <span class="details">Password:</span><br>
+                                    <input id="password"  name="password" onkeyup="checkpassword()" type="password" placeholder="Create Password" required>
+                                    <h4 class="error" id="passwordmsg"></h4>
+                                </div>
+
+                                <div class="inputbox">
+                                    <span class="details">Confirm Password:</span><br>
+                                    <input id="confirmpassword"  onkeyup="confirmPassword()" type="password" placeholder="Confirm Your Password" required>
+                                    <h4 class="error" id="confirmpasswordmsg"></h4>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="form-right">
+                                <div class="inputbox">
+                                    <span class="details">Last Name:</span><br>
+
+                                    <input  id="lastName" name="lastName" onkeyup="myfunction2()" type="text" placeholder="Enter Your Last name" required>
+                                    <h4 class="error" id="lastNameMsg"></h4>
+                                </div>
+                                
+                                <br><br>
+                               <input type="checkbox" id="chekBox" onclick="enebleButton()">Accept privacy policy terms<br>
+                                <br>
+                                <input name="submit" type="submit" id="submitbtn" class="loginbtn regbtn" value="Register" disabled>
+                                    
+                            </div>
+                               
+
+                        </form>
+                       
+                    </div>
+
+                </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!------------------------------------------------------>
+    <!----------------Footer Section------------------------>
+    <section>
+        <hr class="footer_hr">
+        <div class="footer">
+            <div class="footerItem">
+                <a ><img class="QR" src="../images/qr.png"></a>
+            </div>
+
+            <div class="footerItem">
+                <h3>ABOUT US</h3>
+                <p>TastyKitchen is a Sri lankan website that provide various recipes arround the world.You Can buy recipes and add your own recipes</p>
+                <i class="fa-brands fa-google-play fa-2x"></i>
+                <i class="fa-brands fa-app-store fa-2x"></i>
+
+            </div>
+
+            <div class="footerItem">
+                <h3>CONTACT US</h3>
+                <p>Tel : +94112666978<br>Fax : 94112666978<br>E-mail : info@TastyKitchen.net</p>
+            </div>
+
+            <div class="footerItem">
+                <h3>FOLLOW US</h3>
+                <div class="f_icon">
+                    <i class="fa-brands fa-facebook-f fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <i class="fa-brands fa-google-plus-g fa-2x"></i>
+                </div>
+                
+            </div>
+
+            <div class="footerItem">
+                    <img class="f_logo" src="../images/Logo.png" alt="Logo">
+            </div>
+
+        </div>
+
+</section>
+
+</body>
+</html>

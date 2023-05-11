@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-left: 0;
+    font-family: 'Poppins', sans-serif;font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: black ;
+    width: 98.25%;  
+    /*position: fixed;
+    z-index: 12;*/
+}
+
+.logo{
+    flex-basis: 10%;
+}
+
+.logo img{
+    height: 80px;
+}
+
+.navlinks{
+    text-align: right;
+    flex-basis: 80%;
+}
+
+.navlinks ul{
+    position: relative;
+    margin-right: 50px;
+}
+
+.navlinks ul li{
+    position: relative;
+    list-style: none;
+    display:inline-block;
+    padding: 8px 20px;
+}
+
+.navlinks ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.navlinks ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navlinks ul li a:hover::after{
+    width: 100%;
+}
+
+/*------------------*/
+.profile{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.fa-solid{
+    color: #fff;
+    margin-right: 0px;
+}
+
+
+.text{
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text h1{
+    font-size: 70px;
+}
+
+.text p{
+    font-size: 20px;
+}
+
+/*-------------Section 3---Footer-------------*/
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px 0 150px;
+    height: 40vh;
+}
+
+
+.footerItem{
+    height: 250px;
+    width: 250px;
+}
+
+.QR{
+    height: 250px;
+    width: 250px;
+}
+
+.f_icon{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.f_logo{
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    padding: 0;
+}
+
+.footer_hr{
+    height: 3px;
+    background-color: #808080;
+}
+
+
+
+/*************************************************************/
+/***************************************************************/
+/**************************************************************/
+/***************************************************************/
+
+.recipeview{
+    height: 130vh;
+    border: 5px solid red;
+}
+
+.recipeview h1{
+    margin: 20px 0 0 10px ;
+    font-size: 40px;
+    border: 2px solid black;
+}
+
+.recipeview img{
+    margin-top: 40px;
+    margin-left: 10px;
+    border: 5px solid red;
+    height: 400px;
+    width: 600px;
+}
+
+.recipeview .recipebtns{
+    margin: 20px 0 0  100px;
+    display: flex;
+    gap: 20px;
+}
+
+.recipeview .recipebtns input{
+    height: 50px;
+    width: 130px;
+    font-size: 20px;
+    background-color: #808080;
+    border-radius: 10px;
+    border: none ;
+    color: #000;
+    transition: 1s;
+}
+
+.recipeview .recipebtns input:hover{
+    background-color: #112B3C;
+    color: #fff;
+}
+
+#feedbackbtn{
+    background-color: #7333bd;
+}
+
+.recipedec{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.descr{
+    height:500px;
+    width: 500px;
+    margin-top: 40px;
+    border: 3px solid black;
+    word-wrap: break-word;
+    border-radius: 10px;
+    color: #112B3C;
+}
+
+.descr h2{
+    margin-left: 15px;
+    font-size: 35px;
+}
+
+.descr p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.feedbacksection{
+    border: 2px solid black;
+    margin-top: 20px;
+    height: 60vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow-y: scroll;
+}
+
+.feedbacktopic{
+    font-size: 50px;
+}
