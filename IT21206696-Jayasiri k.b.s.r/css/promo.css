@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-left: 0;
+    font-family: 'Poppins', sans-serif;font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: black ;
+    width: 98%;  
+    /*position: fixed;
+    z-index: 12;*/
+}
+
+.logo{
+    flex-basis: 10%;
+}
+
+.logo img{
+    height: 80px;
+}
+
+.navlinks{
+    text-align: right;
+    flex-basis: 80%;
+}
+
+.navlinks ul{
+    position: relative;
+    margin-right: 50px;
+}
+
+.navlinks ul li{
+    position: relative;
+    list-style: none;
+    display:inline-block;
+    padding: 8px 20px;
+}
+
+.navlinks ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.navlinks ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navlinks ul li a:hover::after{
+    width: 100%;
+}
+
+/*------------------*/
+.profile{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.fa-solid{
+    color: #fff;
+    margin-right: 0px;
+}
+
+
+.text{
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text h1{
+    font-size: 70px;
+}
+
+.text p{
+    font-size: 20px;
+}
+
+/*-------------Section 3---Footer-------------*/
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px 0 150px;
+    height: 40vh;
+
+}
+
+
+.footerItem{
+    height: 250px;
+    width: 250px;
+}
+
+.QR{
+    height: 250px;
+    width: 250px;
+}
+
+.f_icon{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.f_logo{
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    padding: 0;
+}
+
+
+
+
+
+
+/*--------------------------------*/
+/*---------------------------------*/
+/*-------------------------------*/
+.promosection{
+    background: url(../images/promobackground.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.promohead{
+    height:65vh;
+    margin: 0 20px 0 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: 3px solid green;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+h1{
+    font-size: 50px;
+    margin-top: 0;
+    color: #1fff;
+}
+
+
+.butnset{
+    margin-top: 40px;
+}
+
+.btns{
+    height: 50px;
+    width: 120px;
+    background-color: #112B3C ;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.promohead .item{
+    min-height: 450px;
+    min-width: 320px;
+    background:transparent;
+    border: 2px solid red;
+}
+
+.off{
+    height: 90px;
+    width: 320px;
+    background-color: #112B3C;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.item img{
+    height: 250px;
+    width: 320px;
+    margin-top: 0;
+}
+
+.details{
+    height: 100px;
+    width: 320px;
+    background-color: #fff;
+}
+
+.details p{
+    margin: 0 0 10px 0 ;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.details .x{
+    margin: 0 0 0 0 ;
+    font-size: 20px;
+}
